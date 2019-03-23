@@ -1,0 +1,16 @@
+
+def konvert (a: object, b: object, c: object, d: object) -> object:
+    a = float(input())
+    b = float(input())
+    c = float(input())
+    d = float(input())
+
+    if a <= 0 or b <= 0 or c <= 0 or d <= 0:
+    print("enter only positive numbers greater than '0'")
+    #konvert()
+    elif (a >= c and b >= d) and (a >= d and b >= c) or (c >= a and d >= b) or (c >= b and d >= a):
+    print('один конверт вмещается в другой')
+    else:
+    print('один конверт не вмещается в другой')
+
+konvert()
